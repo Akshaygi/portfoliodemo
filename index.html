@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Navbar</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
+</head>
+<body>
+  <div class="backgroundimg"></div>
+  <nav class="navbar">
+    <div class="container flexx">
+    <div class="logo">MySite</div>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+</div>
+  </nav>
+
+  <!-- ///////////////////////////////// hero section /////////////////////////////////////////////// -->
+
+  <div class="herosection">
+
+    <div class="container">
+      <div class="mainhero">
+        <div class="herotxt">
+          <h1>Create <br><span>Content at scale</span></h1>
+          <p>Far more than post-production. Seamless workflows, beautiful visuals, and more freedom in your e-commerce content creation.</p>
+          <div class="form"> 
+            <div class="emailbox" id="emailbox">
+              <input type="email" name="email" id="email" placeholder="Email Address*" class="email">
+              
+            </div>
+            <button id="submit" class="submit">Get Started</button>
+          </div>
+          
+        </div>
+        <div class="heroimg">
+          <img src="heroimg.jpg" alt="heroimg">
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+  <!-- ///////////////////////////////////////// showcase //////////////////////////////////////////// -->
+
+  <div class="showcase">
+
+    <div class="container2">
+      <div class="mainshowcase">
+      <div class="showcasetxt">
+        <h1>There’s A <span>Better</span> Way To Do Post-Production</h1>
+        <p>By leaning on an automated production system, custom editing requirements, and a platform for full transparency of the post-production process, you’re able to scale quickly without the limitations of traditional post-production. All with Pixelz.</p>
+      </div>
+      <div class="showcaseimg">
+        <img src="showcaseimg.png" alt="">
+      </div>
+     </div>
+     <div class="mainshowcase2">
+      
+      <div class="showcaseimg2">
+        <img src="showcaseimg.png" alt="">
+      </div>
+      <div class="showcasetxt2">
+        <h1>Traditional Post-Production Meets <span>AI</span></h1>
+        <p>Post-production doesn’t have to follow the same traditional formula. While we carrying on the consistency and quality that is required in post-production, we’ve broken down the way in which consistency and quality is achieved with a Specialist Assisted Workflow (SAW). Post-production is broken into small steps, some of which are performed by AI or automation, while post-production experts handle more intense or subjective tasks. This combination of traditional and AI has led to speed and consistency.</p>
+        
+      </div>
+     </div>
+  </div>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('active');
+    }
+
+   const email= document.getElementById('emailbox');
+   const submit=document.getElementById('submit');
+    let num=0;
+   submit.onclick=()=>{
+    email.classList.remove('emailbox'); 
+    num=num+1;
+    console.log(num);
+    
+    if(num>0){
+      
+    email.classList.add('emailbox2');
+    }
+    
+   }
+
+
+   </script>
+
+</body>
+</html>

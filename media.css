@@ -1,0 +1,118 @@
+@media (max-width: 768px) {
+    .nav-links {
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      flex-direction: column;
+      display: none;
+    }
+
+    .nav-links.active {
+      display: flex;
+      z-index: 2;
+    }
+    .nav-links a{
+        display: block;
+        text-align: center;
+        padding: 0.5rem;
+    }
+    .flexx{
+      align-items: center;
+    }
+    .logo{
+      font-size: 3rem;
+    }
+    .menu-toggle {
+      display: flex;
+    }
+    .nav-btn {
+        font-size: 1.5rem;
+        padding: 8px;
+      }
+      
+
+    /* ////////////////// hero section ///////////////////// */
+    .herosection {
+      display: block;
+      height: auto;
+    }
+    .mainhero{
+      flex-direction: column;
+      padding: 12rem 1.5rem 1rem 1.5rem;
+      gap: 80px;
+    }
+    .herotxt{
+      width: 100%;
+    }
+    .herotxt h1{
+      font-size: 3.5rem;
+      
+    }
+    .herotxt p{
+      font-size: 1.7rem;
+      
+    }
+    .emailbox2{
+      width: 58%;
+    }
+    .herosection .email{
+      width: 100%;
+    }
+    .herosection .submit{
+      
+      padding: 1.6rem 3rem 1.6rem 3rem;
+     
+    }
+    .heroimg {
+      width: 100%;
+      border-radius: 10px;
+  }
+  
+  /* ///////////////////////////////// Showcaswe //////////////////////////////////////////// */
+.showcase{
+  padding: 1.5rem;
+}
+  .mainshowcase {
+   
+    flex-direction: column-reverse;
+    gap: 20px;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+} 
+.mainshowcase2 {
+   
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+}
+.showcasetxt {
+  width: 100%;
+  text-align: left;
+}
+.showcasetxt h1 {
+  font-size: 3.2rem;
+}
+.showcaseimg {
+  width: 100%;
+  border-radius: 10px;
+
+}
+.showcaseimg2{
+  width: 100%;
+  border-radius: 10px;
+}
+.showcasetxt2 {
+  width: 100%;
+  text-align: left;
+}
+.showcasetxt2 h1 {
+  font-size: 3.2rem;
+}
+  }
+  
+   
+   
+   
