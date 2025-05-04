@@ -136,7 +136,7 @@ html{
 }
 .heroimg img{
   width: 100%;
-  
+  display:block;
 }
 .form{
   display: flex;
