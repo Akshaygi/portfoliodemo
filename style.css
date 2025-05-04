@@ -131,12 +131,14 @@ html{
 }
 .heroimg{
   width: 50%;
+  height: 100%;
   border-radius: 55px;
   overflow: hidden;
 }
 .heroimg img{
   width: 100%;
-  display:block;
+  display: block;
+  object-fit: cover;
 }
 .form{
   display: flex;
@@ -240,21 +242,23 @@ html{
 }
 .showcaseimg{
   width: 60%;
+    height:100%;
   overflow: hidden;
   border-radius: 55px;
 }
 .showcaseimg2{
   width: 60%;
+     height:100%;
   overflow: hidden;
   border-radius: 55px;
 }
 .showcaseimg img{
   width: 100%;
-  
+  display:block;
 }
 .showcaseimg2 img{
   width: 100%;
-  
+  display:block;
 }
 .showcase .mainshowcase:hover img{
   transform: scale(1.03);
